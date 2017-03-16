@@ -24,6 +24,7 @@ public class PersonController {
     @RequestMapping(value = "/all",method = RequestMethod.GET)
     public String getAllPerson(){
         String str = "";
+
         List<Person> list =  iPersonService.getAllDates();
         return list.size()+"  ---  ";
     }
