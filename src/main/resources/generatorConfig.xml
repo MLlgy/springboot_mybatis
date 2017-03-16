@@ -4,13 +4,13 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
         <!-- 驱动jar包，mssql使用jtds-1.2.jar,mysql使用mysql-connector-java-5.0.8-bin.jar -->
-        <classPathEntry location="/home/monkey/下载/GEN/mysql-connector-java.jar" />
+        <classPathEntry location="/home/monkey/GEN/mysql-connector-java.jar" />
 
         <context id="FreeCMS_Tables" targetRuntime="MyBatis3">
                 
                 <!-- mysql配置 -->
                 <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://121.0.0.1:3306/db1"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/db1"
 						userId="root"
                         password="root">
                 </jdbcConnection>
@@ -21,21 +21,21 @@
                 
                 <!-- model生成文件的存放位置 -->
                 <javaModelGenerator targetPackage="com.example.domain"
-                        targetProject="/home/monkey/下载/GEN/src">
+                        targetProject="/home/monkey/GEN/src">
                         <property name="enableSubPackages" value="true" />
                         <property name="trimStrings" value="true" />
                 </javaModelGenerator>
                 
                 <!-- sqlmap生成文件的存放位置 -->
                 <sqlMapGenerator targetPackage="com.xml"
-                        targetProject="/home/monkey/下载/GEN/src">
+                        targetProject="/home/monkey/GEN//src">
                         <property name="enableSubPackages" value="true" />
                 </sqlMapGenerator>
 
                 <!-- dao生成文件的存放位置 -->
                 <javaClientGenerator type="XMLMAPPER"
                         targetPackage="com.example.mapper"
-                        targetProject="/home/monkey/下载/GEN/src">
+                        targetProject="/home/monkey/GEN/src">
                         <property name="enableSubPackages" value="true" />
                 </javaClientGenerator>
 
