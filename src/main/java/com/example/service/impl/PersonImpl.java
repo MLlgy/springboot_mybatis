@@ -1,5 +1,6 @@
 package com.example.service.impl;
 
+//import com.example.mapper.PersonMapper;
 import com.example.domain.Person;
 import com.example.mapper.PersonMapper;
 import com.example.service.IPersonService;
@@ -14,7 +15,7 @@ import java.util.List;
  */
 @Service
 @Transactional
-public class PersonImpl implements IPersonService {
+public class PersonImpl  implements IPersonService {
 
     @Autowired
     private PersonMapper mapper;

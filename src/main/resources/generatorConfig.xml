@@ -19,23 +19,23 @@
                         <property name="forceBigDecimals" value="false" />
                 </javaTypeResolver>
                 
-                <!-- model生成文件的存放位置 -->
+                <!-- domain生成文件的存放位置 -->
                 <javaModelGenerator targetPackage="com.example.domain"
-                        targetProject="/home/monkey/GEN/src">
+                        targetProject="/home/monkey/音乐/demo/src/main/java">
                         <property name="enableSubPackages" value="true" />
                         <property name="trimStrings" value="true" />
                 </javaModelGenerator>
                 
-                <!-- sqlmap生成文件的存放位置 -->
-                <sqlMapGenerator targetPackage="com.xml"
-                        targetProject="/home/monkey/GEN//src">
+                <!-- mapper.xml生成文件的存放位置 -->
+                <sqlMapGenerator targetPackage="mapper"
+                        targetProject="/home/monkey/音乐/demo/src/main/resources">
                         <property name="enableSubPackages" value="true" />
                 </sqlMapGenerator>
 
-                <!-- dao生成文件的存放位置 -->
+                <!-- mapper生成文件的存放位置 -->
                 <javaClientGenerator type="XMLMAPPER"
                         targetPackage="com.example.mapper"
-                        targetProject="/home/monkey/GEN/src">
+                        targetProject="/home/monkey/音乐/demo/src/main/java">
                         <property name="enableSubPackages" value="true" />
                 </javaClientGenerator>
 
